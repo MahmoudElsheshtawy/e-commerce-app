@@ -1,0 +1,16 @@
+.AllCategory {
+    padding: 0 9rem;
+
+}
+.AllCategory .header h3{
+ margin-bottom: 0;
+ font-size: 20px;
+}
+.header .line{
+    width:40px ;
+    height: 2px;
+    border:1px solid #ca0cad;
+    display: flex;
+    margin-top: 4px;
+    background-color: #cc0dbc;
+}

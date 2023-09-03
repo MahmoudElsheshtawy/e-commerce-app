@@ -1,0 +1,41 @@
+.Category .contanerr{
+   /* background-color: #6d4646; */
+   width: 80%;
+  margin: auto;
+}
+.Category .contanerr .cart{
+ background-color: #fff;
+ width: 100%;
+ 
+ display: flex;
+ justify-content: center;
+
+ flex-wrap: wrap;
+ overflow: hidden;
+}
+.cat{
+    /* background-color: #f00a0a; */
+    /* padding:.5rem 0.1rem; */
+    margin-top: 40px;
+    margin-bottom: 40px;
+    margin-right: 20px;
+    overflow: hidden;
+}
+
+.cat img{
+    width: 250px;
+    height: 150px;
+    object-fit: cover;
+    background-size: cover;
+   transition: .3s ease-in-out;
+   cursor: pointer;
+   
+
+    
+}
+.cat img:hover{
+   transform: scale(1.1);
+  
+
+
+}

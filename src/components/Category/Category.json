@@ -1,0 +1,26 @@
+[
+    {
+        "id": 1,
+        "name": "Shoes",
+        "price": 600,
+        "imgUrl": "/assets/category/cat1.jpg"
+      },
+      {
+        "id": 2,
+        "name": "Shoes",
+        "price": 600,
+        "imgUrl": "/assets/category/cat2.jpg"
+      },
+      {
+        "id": 3,
+        "name": "Shoes",
+        "price": 600,
+        "imgUrl": "/assets/category/cat3.jpg"
+      },
+      {
+        "id": 4,
+        "name": "Shoes",
+        "price": 600,
+        "imgUrl": "/assets/category/cat4.jpg"
+      }
+    ]

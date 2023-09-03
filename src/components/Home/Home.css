@@ -1,0 +1,133 @@
+.hero{
+    height: calc(100vh - 80px);
+    padding: 40px 0;
+    position: relative;
+    background-image: linear-gradient(to right, #8e2de2, #4a00e0);
+}
+.content{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+
+}
+.content .banner-img{
+position: relative;
+z-index: 9;
+width: 500px;
+margin-right: 80px;
+margin-bottom: 20px;
+}
+.text-content {
+    color: white;
+    /* text-align: center; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    left: 150px;
+    top: 40%;
+    transform: translateY(-50%);
+    }
+ 
+h1{
+    font-size: 100px;
+    font-weight: 700;
+    line-height: 1;
+    color: white;
+    margin-bottom: 20px;
+      
+} 
+p{
+    max-width: 400px;
+    font-size: 19px;
+    line-height: 20px;
+    margin-bottom: 30px;
+    font-family: 'Lobster', cursive;
+    line-height: 1.3;
+       
+} 
+.ctas {
+   display: flex;
+   align-items: center;
+}
+.ctas .banner-cta{
+    border: 2px solid #fff;
+    border-radius: 10px;
+    margin-right: 10px;
+    padding: 5px;
+    transition: .4s ease-in-out;
+    cursor: pointer;
+    font-weight: 500;
+
+}
+.ctas .banner-cta:hover{
+    background-color: #fff;
+    color: black;
+   
+}
+/* media */
+@media screen and (max-width:1123px) {
+    .content .banner-img{
+        width: 400px;
+        margin-right: 80px;
+        margin-bottom: 20px;
+        }
+        h1{
+        font-size: 80px;     
+        } 
+        .text-content {
+        left: 80px;
+        }
+}
+@media screen and (max-width:950px) {
+
+    .content .banner-img{
+        width: 300px;
+        margin-right: 50px;
+        margin-bottom: 20px;
+        }
+        h1{
+        font-size: 70px; 
+        margin-right: 130px;    
+        } 
+        .text-content {
+            left: 50px;
+            top:40%;
+            transform: translateY(-50%);
+            }
+}
+@media screen and (max-width:800px) {
+    .content .banner-img{
+        width: 200px;
+        }
+        h1{
+        font-size: 60px;  
+        text-align: center;
+        } 
+        .text-content {
+            left: 30px;
+            top:60%;
+        }
+        p{
+            /* max-width:fit-content; */
+            font-size: 15px;
+               
+        } 
+}
+@media screen and (max-width:340px) {
+   .text-content h1{
+      
+   
+        text-align: center;
+        position: relative;
+        right:-18%
+    }
+
+    .text-content {
+        text-align: center;
+        left: 5px;
+        right: 5px;
+        top: 60%;
+           
+    }
+}
