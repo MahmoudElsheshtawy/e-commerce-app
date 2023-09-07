@@ -9,10 +9,11 @@ const Cart = ({setshowCart}) => {
   return (
     <div className={style.contaner}  > 
         <div onClick={()=>setshowCart(false)} className={style.layer}></div>
+
         <div className={style.content}>
-            <div className={style.head} style={{display:'flex',alignItems:'center',justifyContent:'space-btween',flexDirection:'column'}}>
+            <div className={style.head}>
                 <span>Shopping Cart</span>
-                <button onClick={()=>setshowCart(false)}>x</button>
+                <button className={style.btnhead} onClick={()=>setshowCart(false)}>X close</button>
             </div>
             <div className={style.body}>
               {
@@ -20,7 +21,8 @@ const Cart = ({setshowCart}) => {
              <CartShopping key={item.id} {...item}/>
                ))
               }
-              <span className={style.total}>Total price: </span>
+            <div className={style.total }>
+            <span className={style.text}>Total price: </span>
                {formatCurrency(
                 cartItems.reduce((total,cartItem)=>{
                   const item = AllCategorys.find((i)=>i.id === cartItem.id)
@@ -28,6 +30,7 @@ const Cart = ({setshowCart}) => {
 
                 },0)
                )}
+            </div>
 
             </div>
         </div>

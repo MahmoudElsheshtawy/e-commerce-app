@@ -15,34 +15,47 @@ const CartShopping = ({id , qunatity}) => {
   return (
     <>
       <div className="top"
-      style={{display:'flex',
+      style={{
+        display:'flex',
       justifyContent:'space-between',
-      backgroundColor:'antiquewhite',
+      backgroundColor:'#f2f2f2',
       marginBottom:'5px'
       ,alignItems:'center' , gap:2 , }}>
         
       
-         <div  style={{display:'flex', alignItems:'center' }}>
+         <div  style={{
+          display:'flex', 
+          //  backgroundColor:"InfoText",
+          alignItems:'center',
+          // color:'#fff'
+           }}>
          <img src={item.imgUrl} alt='cart-img' style={{
-            width:'100px',
-            height:'100px',
-            objectFit:'cover'
+            width:'90px',
+            height:'90px',
+            objectFit:'cover',
+            // backgroundColor:''
 
          }}/>
-         <div style={{ }}>
+      <div className="allinfo">
+      <div className='text-info' style={{ 
+          display:'flex',
+          alignItems:'center',
+          // marginTop:'5px'
+          }}>
               <span style={{fontFamily:'DM Serif Display'}}> {item.name}</span>
               {qunatity>1&& <span style={{color:'#aaa',fontSize:'2px',marginLeft:'3px'}}>x{qunatity}</span>}
          </div>
        
-         <div className='price'>
-         <spen> {formatCurrency(item.price)}</spen>
-
+         <div className='price' style={{display:'flex'}}>
+               <spen> {formatCurrency(item.price)}</spen>
          </div>
+      </div>
         
          </div>
-         <div className='calc'>
+         {/* 2 */}
+         <div className='calc' style={{display:'flex',alignItems:'center'}}>
          {formatCurrency(item.price*qunatity)}
-         <button onClick={()=>removeItemFromCart(id)}>X</button>
+         <button style={{border:'none',marginLeft:'10px',backgroundColor:'#dfdfdf', cursor:'pointer',alignItems:'center', color:'#000',marginRight:'5px',borderRadius:'50%' ,fontSize:'6px', width:'20px',height:"20px" ,}} onClick={()=>removeItemFromCart(id)}>X</button>
          </div>
          
 

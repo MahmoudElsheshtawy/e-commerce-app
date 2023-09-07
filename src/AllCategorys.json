@@ -63,54 +63,54 @@
       {
         "id": 11,
         "name": "Haedphone",
-        "price": 2600,
+        "price": 260,
         "imgUrl": "/assets/products/headphone-prod-6.webp"
       },
       {
         "id": 12,
-        "name": "Speakers",
-        "price": 1600,
+        "name": "Speaker",
+        "price": 160,
         "imgUrl": "/assets/products/speaker-prod-1.webp"
       },
       {
         "id": 13,
-        "name": "Speakers",
-        "price": 1000,
+        "name": "Speaker",
+        "price": 100,
         "imgUrl": "/assets/products/speaker-prod-2.webp"
       },
       {
         "id": 14,
-        "name": "Speakers",
+        "name": "Speaker",
         "price": 700,
         "imgUrl": "/assets/products/speaker-prod-3.webp"
       },
       {
         "id": 15,
-        "name": "Speakers",
+        "name": "Speaker",
         "price": 500,
         "imgUrl": "/assets/products/speaker-prod-4.webp"
       },
       {
         "id": 16,
-        "name": "Speakers",
+        "name": "Speaker",
         "price": 600,
         "imgUrl": "/assets/products/speaker-prod-5.webp"
       },
       {
         "id": 17,
-        "name": "Smart Watchs",
+        "name": "Smart Watch",
         "price": 6000,
         "imgUrl": "/assets/products/watch-prod-1.webp"
       },
       {
         "id": 18,
-        "name": "Smart Watchs",
+        "name": "Smart Watch",
         "price": 3000,
         "imgUrl": "/assets/products/watch-prod-2.webp"
       },
       {
         "id": 19,
-        "name": "Smart Watchs",
+        "name": "Smart Watch",
         "price": 1200,
         "imgUrl": "/assets/products/watch-prod-3.webp"
       }

@@ -1,4 +1,4 @@
-import { createContext, useContext, useState } from "react";
+import { createContext, useContext, useEffect, useState } from "react";
 // import Allabout from "../components/Allabout";
 import Navbar from "../components/Header/Navbar";
 import { Route, Routes } from "react-router-dom";
@@ -10,15 +10,14 @@ import Cartitem from "../components/Cartitem/Cartitem";
 import Category from "../components/Category/Categories";
 
 
-
+const initialvalue = localStorage.getItem('shoppingcart') ?JSON.parse(localStorage.getItem('shoppingcart') ):[]
 
 const ShoppingCartContext = createContext({})
 
 const ShoppingCartProvider = ({Children}) => {
 
   // conuter
- 
-    const [cartItems ,setCartItems] =useState([]);
+    const [cartItems ,setCartItems] =useState(initialvalue);
     // counter
     const cartQuntity = cartItems.reduce((qunatity,item)=>item.qunatity+qunatity,0)
     // qunatity in cart
@@ -47,7 +46,6 @@ const ShoppingCartProvider = ({Children}) => {
             }      
     } );};
     // qunatity apper in cart -1 
-
     const decreaseCartQunatity =(id)=>{
         setCartItems((currntitem)=>{
          if (currntitem.find((item)=>item.id ===id)?.qunatity=== 1) {
@@ -85,6 +83,11 @@ const ShoppingCartProvider = ({Children}) => {
 const removeItemFromCart =(id)=>{
   setCartItems((currntitem)=>currntitem.filter((item)=>item.id !==id));
 }
+
+useEffect(()=>{
+  //create local 
+localStorage.setItem("shoppingcart", JSON.stringify(cartItems))
+},[cartItems])
   return (
    <ShoppingCartContext.Provider
    value={{
