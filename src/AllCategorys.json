@@ -1,0 +1,117 @@
+
+[
+    {
+        "id": 1,
+        "name": "Earbuds",
+        "price": 1200,
+        "imgUrl": "/assets/products/earbuds-prod-1.webp"
+      },
+      {
+        "id": 2,
+        "name": "Earbuds",
+        "price": 3600,
+        "imgUrl": "/assets/products/earbuds-prod-2.webp"
+      },
+      {
+        "id": 3,
+        "name": "Earbuds",
+        "price": 6000,
+        "imgUrl": "/assets/products/earbuds-prod-3.webp"
+      },
+      {
+        "id": 4,
+        "name": "Earbuds",
+        "price": 600,
+        "imgUrl": "/assets/products/earbuds-prod-4.webp"
+      },
+      {
+        "id": 5,
+        "name": "Earbuds",
+        "price": 7600,
+        "imgUrl": "/assets/products/earbuds-prod-5.webp"
+      },
+      {
+        "id": 6,
+        "name": "Haedphone",
+        "price": 7600,
+        "imgUrl": "/assets/products/headphone-prod-1.webp"
+      },
+      {
+        "id": 7,
+        "name": "Haedphone",
+        "price": 5600,
+        "imgUrl": "/assets/products/headphone-prod-2.webp"
+      },
+      {
+        "id": 8,
+        "name": "Haedphone",
+        "price": 600,
+        "imgUrl": "/assets/products/headphone-prod-3.webp"
+      },
+      {
+        "id": 9,
+        "name": "Haedphone",
+        "price": 4600,
+        "imgUrl": "/assets/products/headphone-prod-4.webp"
+      },
+      {
+        "id": 10,
+        "name": "Haedphone",
+        "price": 3600,
+        "imgUrl": "/assets/products/headphone-prod-5.webp"
+      },
+      {
+        "id": 11,
+        "name": "Haedphone",
+        "price": 2600,
+        "imgUrl": "/assets/products/headphone-prod-6.webp"
+      },
+      {
+        "id": 12,
+        "name": "Speakers",
+        "price": 1600,
+        "imgUrl": "/assets/products/speaker-prod-1.webp"
+      },
+      {
+        "id": 13,
+        "name": "Speakers",
+        "price": 1000,
+        "imgUrl": "/assets/products/speaker-prod-2.webp"
+      },
+      {
+        "id": 14,
+        "name": "Speakers",
+        "price": 700,
+        "imgUrl": "/assets/products/speaker-prod-3.webp"
+      },
+      {
+        "id": 15,
+        "name": "Speakers",
+        "price": 500,
+        "imgUrl": "/assets/products/speaker-prod-4.webp"
+      },
+      {
+        "id": 16,
+        "name": "Speakers",
+        "price": 600,
+        "imgUrl": "/assets/products/speaker-prod-5.webp"
+      },
+      {
+        "id": 17,
+        "name": "Smart Watchs",
+        "price": 6000,
+        "imgUrl": "/assets/products/watch-prod-1.webp"
+      },
+      {
+        "id": 18,
+        "name": "Smart Watchs",
+        "price": 3000,
+        "imgUrl": "/assets/products/watch-prod-2.webp"
+      },
+      {
+        "id": 19,
+        "name": "Smart Watchs",
+        "price": 1200,
+        "imgUrl": "/assets/products/watch-prod-3.webp"
+      }
+]

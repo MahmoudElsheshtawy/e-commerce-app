@@ -7,11 +7,18 @@
       "default",
       {
         "ignore": [
-          "position: sticky"
+          "position: sticky",
+          "width: fit-content"
         ]
       }
     ],
     "detect-css-reflows/composite": "off",
     "detect-css-reflows/paint": "off"
-  }
+  },
+  "browserslist": [
+    "defaults",
+    "not ie 11",
+    "not and_ff <= 115",
+    "not firefox <= 114"
+  ]
 }

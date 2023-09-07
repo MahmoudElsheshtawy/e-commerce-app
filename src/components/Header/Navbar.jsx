@@ -4,9 +4,10 @@ import { NavLink } from 'react-router-dom'
 import { CgShoppingCart } from "react-icons/cg";
 import { AiOutlineHeart ,AiOutlineSearch} from "react-icons/ai";
 import Cart from '../Cart/Cart';
+import { useShoppingCart } from '../../Context/ShoppingCartContext';
 const Navbar = () => {
     const [scrolled,setScroll]= useState(false)
-    const [showcart,setshowCart]= useState(false)
+    const [showcard,setshowCard]= useState(false)
     
     const handleScroll =()=>{
         const offset =window.scrollY;
@@ -22,7 +23,7 @@ const Navbar = () => {
     }, []);
 
 
-
+const {cartQuntity}= useShoppingCart()
 
   return (
     <>
@@ -46,8 +47,8 @@ const Navbar = () => {
                     <AiOutlineSearch className='icon'/>
                     <AiOutlineHeart  className='icon'/>
                     <div className='cart'>
-                    <CgShoppingCart onClick={()=>setshowCart(!showcart)} className='icon'/>
-                    <span className='qut'>1</span>
+                    <CgShoppingCart onClick={()=>setshowCard(!showcard)} className='icon'/>
+                    <span className='qut'>{cartQuntity}</span>
                     </div>
                     
 
@@ -61,7 +62,7 @@ const Navbar = () => {
 
 
 
-              {showcart &&<Cart setshowCart={setshowCart}/>}
+              {showcard &&<Cart setshowCart={setshowCard}/>}
               </>
   )
 }

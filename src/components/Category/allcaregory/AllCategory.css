@@ -1,16 +1,59 @@
-.AllCategory {
-    padding: 0 9rem;
+
+.AllCategory .product .Cards{
+    background-color: #d2cfcf;
+    width: 240px;
+    overflow: hidden;
+  
+}
+
+.AllCategory .product .Cards img{
+    width: 200px;
+    text-align: center;
+    transition: .3s ease-in-out;
+    margin-left: 20px;
+    cursor: pointer;
+}
+.AllCategory .product .Cards img:hover{
+    transform: scale(1.1);
+}
+.incrce{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.btn{
+    background-color: #ffffff;
+    border: none;
+    font-size: 20px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    border-radius: 20px;
+    height: 30px;
+    width: 30px;
+    cursor: pointer;
+    transition: .3s ease-in-out;
+    
+}
+.btn:hover{
+    transform: scale(1.1);
 
 }
-.AllCategory .header h3{
- margin-bottom: 0;
- font-size: 20px;
+.quntity{
+    margin: 0 10px;
 }
-.header .line{
-    width:40px ;
-    height: 2px;
-    border:1px solid #ca0cad;
-    display: flex;
-    margin-top: 4px;
-    background-color: #cc0dbc;
+.remove-btn{
+    background-color: rgb(255, 255, 255);
+    border: none;
+    padding: .4rem;
+    border-radius: 10px;
+    text-align: center;
+    cursor: pointer;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    width: 150px;
+    margin-left: 18.8%;
+    transition: .3s ease-in-out;
 }
+.remove-btn:hover{
+    background-color: #f63636;
+}
+

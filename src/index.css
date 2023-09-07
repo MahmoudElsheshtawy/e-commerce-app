@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@10..48,400;10..48,500;10..48,700&family=Lobster&family=Roboto:ital,wght@0,300;0,400;0,500;1,100;1,400;1,500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@10..48,400;10..48,500;10..48,700&family=DM+Serif+Display:ital@0;1&family=Lobster&family=Roboto:ital,wght@0,300;0,400;0,500;1,100;1,400;1,500&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@10..48,400;10..48,500;10..48,700&family=Lobster&family=Roboto:ital,wght@0,300;0,400;0,500;1,100;1,400;1,500&display=swap');
 body {
   margin: 0;font-family: 'Roboto', sans-serif;
@@ -8,7 +9,6 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
-
 ::-webkit-scrollbar{
   background: none;
   width: 7px;
@@ -17,4 +17,76 @@ code {
 ::-webkit-scrollbar-thumb{
   background-color:rgb(0, 0, 0);
   width: 10px;
+}
+/* add to catd */
+
+.CartBtn {
+  width: 200px;
+  height: 35px;
+  border-radius: 12px;
+  border: none;
+  margin-top: 10px;
+  margin-bottom: 5px;
+  margin-left: 20px;
+  /* background-color: rgb(55, 54, 55);
+   */
+   /* background: linear-gradient(135deg,#7b4397,#dc2430 ); */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition-duration: .5s;
+  overflow: hidden;
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.103);
+  position: relative;
+}
+.IconContainer {
+  position: absolute;
+  left: -50px;
+  width: 30px;
+  height: 30px;
+  background-color: transparent;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  z-index: 2;
+  transition-duration: .5s;
+}
+
+.icon {
+  border-radius: 1px;
+}
+
+.textbtn {
+  height: 100%;
+  width: fit-content;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: rgb(17, 17, 17);
+  z-index: 1;
+  transition-duration: .5s;
+  font-size: 1.08em;
+  font-weight: 600;
+  position: relative;
+  top: 7px;
+  font-family: 'Roboto', sans-serif;
+}
+
+.CartBtn:hover .IconContainer {
+  transform: translateX(58px);
+  border-radius: 40px;
+  transition-duration: .5s;
+}
+
+.CartBtn:hover .textbtn {
+  transform: translate(10px,0px);
+  transition-duration: .5s;
+}
+
+.CartBtn:active {
+  transform: scale(0.95);
+  transition-duration: .5s;
 }
