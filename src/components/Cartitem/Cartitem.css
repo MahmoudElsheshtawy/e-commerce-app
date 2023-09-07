@@ -22,3 +22,8 @@
     margin-top: 10px;margin-bottom: 30px;
     /* background-color: aqua; */
    }
+   @media screen and  (max-Width:680px){
+    .contanerer{
+        padding: 0 1.8rem;
+    }
+   }

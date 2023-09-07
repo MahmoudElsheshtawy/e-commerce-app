@@ -8,8 +8,9 @@ import Footer from "../components/Footer/Footer";
 // import AllCategory from "../components/Category/allcaregory/AllCategory";
 import Cartitem from "../components/Cartitem/Cartitem";
 import Category from "../components/Category/Categories";
+import Newsletter from "../components/Newsletter/Newsletter";
 
-
+// transfare []=> {}
 const initialvalue = localStorage.getItem('shoppingcart') ?JSON.parse(localStorage.getItem('shoppingcart') ):[]
 
 const ShoppingCartContext = createContext({})
@@ -114,7 +115,7 @@ localStorage.setItem("shoppingcart", JSON.stringify(cartItems))
    {/* <Categories /> */}
    {/* <AllCategory  /> */}
    <Cartitem/>
-  
+  <Newsletter/>
    <Footer/>
    </ShoppingCartContext.Provider>
   )
