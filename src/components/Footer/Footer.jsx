@@ -21,17 +21,16 @@ const Footer = () => {
                     <div className="c-item">
                         <FaLocationArrow />
                         <div className="text">
-                            Kayaloram Rd, Punnamada,
-                            Kerala, 688006
+                           elzangla ,egypt
                         </div>
                     </div>
                     <div className="c-item">
                         <FaMobileAlt />
-                        <div className="text">Phone: 0471 272 0261</div>
+                        <div className="text">Phone: 01067870535</div>
                     </div>
                     <div className="c-item">
                         <FaEnvelope />
-                        <div className="text">Email: store@jsdev.com</div>
+                        <div className="text">Email: elsheshtawym54@gmail.com</div>
                     </div>
                 </div>
                 <div className="col">
@@ -56,8 +55,7 @@ const Footer = () => {
             <div className="bottom-bar">
                 <div className="bottom-bar-content">
                     <span className="text">
-                        JSDEVSTORE 2022 CREATED BY JS DEV. PREMIUM E-COMMERCE
-                        SOLUTIONS.
+                        Created by Mahmoud_Elsheshtawy. E-COMMERCE-APP .
                     </span>
                    
                     <img src={Payment} />
