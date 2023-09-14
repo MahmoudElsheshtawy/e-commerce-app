@@ -25,22 +25,17 @@ const CartShopping = ({id , qunatity}) => {
       
          <div  style={{
           display:'flex', 
-          //  backgroundColor:"InfoText",
           alignItems:'center',
-          // color:'#fff'
            }}>
          <img src={item.imgUrl} alt='cart-img' style={{
             width:'90px',
             height:'90px',
             objectFit:'cover',
-            // backgroundColor:''
-
          }}/>
       <div className="allinfo">
       <div className='text-info' style={{ 
           display:'flex',
           alignItems:'center',
-          // marginTop:'5px'
           }}>
               <span style={{fontFamily:'DM Serif Display'}}> {item.name}</span>
               {qunatity>1&& <span style={{color:'#aaa',fontSize:'2px',marginLeft:'3px'}}>x{qunatity}</span>}

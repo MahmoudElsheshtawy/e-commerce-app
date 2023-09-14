@@ -2,7 +2,6 @@
 import React from 'react'
 import './AllCategory.css'
 import {useShoppingCart}from '../../../../src/Context/ShoppingCartContext'
-// import AllCategorys from '../../../../src/AllCategorys.json'
 import formatCurrency from '../../formatCurrency'
 const AllCategory = ({id, name, price, imgUrl }) => {
   const {gitItemqunatity,increaseCartQunatity,decreaseCartQunatity,removeItemFromCart}=useShoppingCart();
@@ -11,7 +10,6 @@ const AllCategory = ({id, name, price, imgUrl }) => {
     <div className='AllCategory'>
          
                <div className="product">
-                 {/* {AllCategorys.map((item)=>( */}
                    <div className="Cards">
                      <img src={imgUrl}/>
                      <div className="text-a" style={{display:'flex',alignItems:'center',justifyContent:"space-between",padding:2}}>
@@ -45,7 +43,7 @@ const AllCategory = ({id, name, price, imgUrl }) => {
 
                    </div>
 
-                 {/* ))}  */}
+             
                </div>
         
         

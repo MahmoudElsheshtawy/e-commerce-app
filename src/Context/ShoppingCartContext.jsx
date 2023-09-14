@@ -1,11 +1,9 @@
 import { createContext, useContext, useEffect, useState } from "react";
-// import Allabout from "../components/Allabout";
 import Navbar from "../components/Header/Navbar";
 import { Route, Routes } from "react-router-dom";
 import Home from "../components/Home/Home";
 import About from "../components/Header/About";
 import Footer from "../components/Footer/Footer";
-// import AllCategory from "../components/Category/allcaregory/AllCategory";
 import Cartitem from "../components/Cartitem/Cartitem";
 import Category from "../components/Category/Categories";
 import Newsletter from "../components/Newsletter/Newsletter";
@@ -108,12 +106,10 @@ localStorage.setItem("shoppingcart", JSON.stringify(cartItems))
     <Navbar/>
    <Routes>
      <Route path="/" element={<Home />}/>
-     {/* <Route path="/Categories" element={<Categories />}/> */}
      <Route path="/About" element={<About />}/>
    </Routes>
    <Category/>
-   {/* <Categories /> */}
-   {/* <AllCategory  /> */}
+
    <Cartitem/>
   <Newsletter/>
    <Footer/>

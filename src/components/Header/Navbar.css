@@ -18,12 +18,10 @@
 .center{
   font-family: 'Lobster', cursive;
   font-size: 30px;
-  /* background-color: aqua; */
 }
 .right{
     display: flex;
     align-items: center;
-    /* background-color: aqua; */
 }
 .right .icon{
     font-weight: 600;

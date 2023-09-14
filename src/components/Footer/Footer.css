@@ -11,8 +11,8 @@
     
 }
 .footer{
- /* background-color:bisque ; */
  margin-top: 30px;
+ padding: 0 2rem;
 }
 .text {
     color: rgba(0, 0, 0, 0.5);
@@ -46,6 +46,7 @@
     .bottom-bar-content{
         display: flex;
        flex-direction: column;
+       
     }
     .bottom-bar-content img{
         margin-top: 20px;

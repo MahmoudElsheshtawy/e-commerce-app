@@ -5,7 +5,7 @@ import Category from "../Category/Category.json"
 const Categories = () => {
   return (
   <div className='Category'>
-      {/* <div className="44"> */}
+     
         <div className="cart" style={{display:'flex',alignItems:'center',justifyContent:'center',flexWrap:'wrap'}}>
 
         {Category.map((item)=>(
@@ -20,8 +20,6 @@ const Categories = () => {
 
       </div>
   
-  
-  // </div>
     
   )
 }
