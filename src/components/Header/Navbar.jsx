@@ -27,7 +27,7 @@ const {cartQuntity}= useShoppingCart()
 
   return (
     <>
-    <div className={`contaner ${scrolled ?"stiky-header":""}`}> 
+    <div id='Navbar' className={`contaner ${scrolled ?"stiky-header":""}`}> 
           
               <div className='left'>
             <ul className='ul'>
@@ -39,7 +39,7 @@ const {cartQuntity}= useShoppingCart()
 
 
 
-        <div className='center'><span>Sh </span>Store</div>
+        <div className='center'  ><a href='#Home' style={{textDecoration:'none' , color:'#fff'}}><span>Sh Store</span></a></div>
 
 
 

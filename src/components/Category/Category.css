@@ -1,24 +1,40 @@
-.Category .contanerr{
-   background-color: #6d4646;
+.Category {
    width: 80%;
-  margin: auto;
+   margin: auto;
 }
 .cat{
-    /* background-color: #f00a0a; */
-    /* padding:.5rem 0.1rem; */
+    padding:.5rem 0.1rem;
     margin-top: 40px;
     margin-bottom: 40px;
-    margin-right: 20px;
-    overflow: hidden;
+    text-align: center;
 }
 .cat img{
-    width: 250px;
-    height: 150px;
-    object-fit: cover;
-    background-size: cover;
+   width: 154px;
+   height: 162px;
+   object-fit: cover;
+   background-size: cover;
    transition: .3s ease-in-out;
    cursor: pointer;
+   background-color: #e8e8e8;
+   margin-right: 28px;
+   border-radius: 10px;
 }
 .cat img:hover{
    transform: scale(1.1);
+}
+/* top category */
+.cartss.active{
+  /* background-color: rgb(255, 145, 0); */
+  opacity: .7;
+  transition: .4s ease-in-out
+  ;
+}
+.carts{
+   /* background-color: #f00a0a; */
+   display: flex;
+   align-items: center;
+   flex-wrap: wrap;
+   justify-content: center;
+   gap: 0.7rem .37rem;
+   margin-top: 30px;
 }

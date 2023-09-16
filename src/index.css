@@ -90,3 +90,7 @@ code {
   transform: scale(0.95);
   transition-duration: .5s;
 }
+*{
+  scroll-snap-align:start;
+  scroll-behavior: smooth;
+}

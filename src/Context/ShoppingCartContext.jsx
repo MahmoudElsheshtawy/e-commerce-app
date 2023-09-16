@@ -7,6 +7,7 @@ import Footer from "../components/Footer/Footer";
 import Cartitem from "../components/Cartitem/Cartitem";
 import Category from "../components/Category/Categories";
 import Newsletter from "../components/Newsletter/Newsletter";
+import Categories from "../components/Category/Categories";
 
 // transfare []=> {}
 const initialvalue = localStorage.getItem('shoppingcart') ?JSON.parse(localStorage.getItem('shoppingcart') ):[]
@@ -104,8 +105,10 @@ localStorage.setItem("shoppingcart", JSON.stringify(cartItems))
     {Children}
    
     <Navbar/>
+    
    <Routes>
      <Route path="/" element={<Home />}/>
+     {/* <Route path="/Categories" element={<Categories />}/> */}
      <Route path="/About" element={<About />}/>
    </Routes>
    <Category/>
