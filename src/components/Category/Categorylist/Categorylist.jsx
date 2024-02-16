@@ -10,7 +10,7 @@ const Categorylist = ({ title ,active ,setSlected ,id}) => {
    
   <div className='Cart-category'>
     <div className='img'>
-    {title }
+    {  title }
     </div>
   
   </div>

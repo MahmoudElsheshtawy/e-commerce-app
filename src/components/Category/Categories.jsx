@@ -7,7 +7,6 @@ import {
   speaker,
   smartWatch
 }from '../../Category.data'
-// import Category from "../Category/Category.json"
 import cat1 from '../../img/cat1.jpg'
 import cat2 from '../../img/cat2.jpg'
 import cat3 from '../../img/cat3.jpg'
@@ -82,13 +81,6 @@ const Categories = () => {
      
         <div className="cart"style={{display:'flex',alignItems:'center',justifyContent:'center',flexWrap:'wrap'}} >
 
-        {/* {Category.map((item)=>(
-        <div className='cat' key={item.id}>
-           <img  src={item.imgUrl}/>
-
-         </div>
-
-      ))} */}
 
         </div>
         <div className='cat'>

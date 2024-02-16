@@ -32,7 +32,7 @@ const {cartQuntity}= useShoppingCart()
               <div className='left'>
             <ul className='ul'>
                 <NavLink className='li' to={'/'}>Home</NavLink>
-                <NavLink className='li' to={'/About'}>About</NavLink>
+                {/* <NavLink className='li' to={'/About'}>About</NavLink> */}
                 <NavLink className='li' to={'/Categories'}>Categories</NavLink>
             </ul>
         </div>
@@ -48,7 +48,7 @@ const {cartQuntity}= useShoppingCart()
                     <AiOutlineHeart  className='icon'/>
                     <div className='cart'>
                     <CgShoppingCart onClick={()=>setshowCard(!showcard)} className='icon'/>
-                    <span className='qut'>{cartQuntity}</span>
+                    <span className='qut' onClick={()=>setshowCard(!showcard)} >{cartQuntity}</span>
                     </div>
                     
 

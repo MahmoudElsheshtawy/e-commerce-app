@@ -6,17 +6,17 @@ import Footer from "./components/Footer/Footer";
 import ShoppingCartProvider from '../src/Context/ShoppingCartContext'
 import React from "react";
 import Cartitem from "./components/Cartitem/Cartitem";
-// import Categories from "./components/Category/Categories";
+
 const  App=()=> {
   return (
-  //  i can comment all component put not  <ShoppingCartProvider/>
+
      <ShoppingCartProvider>
    
             <Navbar/>
             <Routes>
               <Route path="/" element={<Home />}/>
-              {/* <Route path="/Categories" element={<Categories />}/> */}
-              <Route path="/About" element={<About />}/>
+          
+              {/* <Route path="/About" element={<About />}/> */}
             </Routes>
             <Cartitem/>
             <Footer/>

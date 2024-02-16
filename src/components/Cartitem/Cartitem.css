@@ -20,6 +20,7 @@
     grid-template-columns: repeat(auto-fit ,minmax(15rem, 1fr));
     gap: 1.5rem;
     margin-top: 10px;margin-bottom: 30px;
+ 
    }
    @media screen and  (max-Width:680px){
     .contanerer{
