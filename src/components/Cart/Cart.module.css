@@ -1,105 +1,84 @@
-.contaner{
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: 99;
-    display: flex;
-    justify-content: flex-end;
-    transition: .4s ease-in-out;
+.contaner {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 99;
+  display: flex;
+  justify-content: flex-end;
+  transition: 0.4s ease-in-out;
 }
-.layer{
-    background: rgba(0, 0, 0, 0.5);
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height:100% ;
+.layer {
+  background: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
 }
-.content{
-    width: 320px;
-    height: 100%;
-    background: rgb(255, 255, 255);
-    position: relative;
-    z-index: 1;
-    display: flex;
-    flex-direction: column;
-    transition: .4s ease-in-out;
-    transform: translateX(100%);
-    animation: slideCartWindow 0.4s ease-in forwards;
-   }
+.content {
+  width: 320px;
+  height: 100%;
+  background: rgb(255, 255, 255);
+  position: relative;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  transition: 0.4s ease-in-out;
+  transform: translateX(100%);
+  animation: slideCartWindow 0.4s ease-in forwards;
+}
 
-.head{
-    background-color: rgb(255, 255, 255);
-    color: rgb(0, 0, 0);
-    padding:.9rem;
-    display: flex;
-    justify-content: space-around;
-    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
-    margin-bottom: 5px;
-    position: sticky;
-    width: 100%;
-    z-index: 2;
-  
-   
+.head {
+  background-color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
+  padding: 0.9rem;
+  display: flex;
+  justify-content: space-around;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+  margin-bottom: 5px;
+  position: sticky;
+  width: 100%;
+  z-index: 2;
 }
-.head span{
-    font-weight: 600;
-    letter-spacing:1px;
-
+.head span {
+  font-weight: 600;
+  letter-spacing: 1px;
 }
-.btnhead{
-    border: none;
-    background-color: #eaeaea;
-    cursor: pointer;
-    transition: .4s
-    ;width: 90px;
-    padding: .2rem;
-    border-radius: 20px;
-    transition: .4s ;
+.btnhead {
+  border: none;
+  background-color: #eaeaea;
+  cursor: pointer;
+  transition: 0.4s;
+  width: 90px;
+  padding: 0.2rem;
+  border-radius: 20px;
+  transition: 0.4s;
 }
-.btnhead:hover{
-    background-color: #fafafa;
-
+.btnhead:hover {
+  background-color: #fafafa;
 }
-.body{
-    overflow-y: scroll;
-    margin-bottom: 60px;
+.body {
+  overflow-y: scroll;
+  margin-bottom: 60px;
 }
-.total{
-    background-color: rgb(255, 255, 255);
-    position: absolute;
-    padding: 1.4rem;
-    bottom: 0px;
-    width: 100%;
-    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
-
+.total {
+  background-color: rgb(255, 255, 255);
+  position: absolute;
+  padding: 1.4rem;
+  bottom: 0px;
+  width: 100%;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 }
 
 @keyframes slideCartWindow {
-    0% {
-        transform: translateX(100%);
-    }
-    100% {
-        transform: translateX(0%);
-    }
-} 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(0%);
+  }
+}

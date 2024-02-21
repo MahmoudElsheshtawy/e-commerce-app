@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from 'react'
 import './Navbar.css'
-import { NavLink } from 'react-router-dom'
 import { CgShoppingCart } from "react-icons/cg";
 import { AiOutlineHeart ,AiOutlineSearch} from "react-icons/ai";
 import Cart from '../Cart/Cart';
@@ -29,17 +28,11 @@ const {cartQuntity}= useShoppingCart()
     <>
     <div id='Navbar' className={`contaner ${scrolled ?"stiky-header":""}`}> 
           
-              <div className='left'>
-            <ul className='ul'>
-                <NavLink className='li' to={'/'}>Home</NavLink>
-                {/* <NavLink className='li' to={'/About'}>About</NavLink> */}
-                <NavLink className='li' to={'/Categories'}>Categories</NavLink>
-            </ul>
-        </div>
+    
 
 
 
-        <div className='center'  ><a href='#Home' style={{textDecoration:'none' , color:'#fff'}}><span>Sh Store</span></a></div>
+        <div className='center'  ><a href='#' style={{textDecoration:'none' , color:'#fff'}}><span>Sh Store</span></a></div>
 
 
 

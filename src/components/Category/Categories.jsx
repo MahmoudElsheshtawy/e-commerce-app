@@ -68,6 +68,7 @@ const Categories = () => {
     <div className='carts'>
     {list.map((item)=>(
           <Categorylist 
+          key={item.id}
            title={item.title}
            active={selcted===item.id}
            setSlected={setSlected}
@@ -85,7 +86,7 @@ const Categories = () => {
         </div>
         <div className='cat'>
           {data.map((d)=>(
-           <img src={d.img}/>
+           <img src={d.img} key={d.id}/>
           ))}
         </div>
 
